@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KK2UG/0zxQLiQASUJfRtcNpqJgGEEvBME9FSBcJ6L6JK9aHvLxxefvNN+5WYENTMO0qsOnwXfeFxRmlH+e+xuA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dousu\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\PeepoWorld\\PeepoWorld.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dousu\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}
