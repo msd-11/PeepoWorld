@@ -6,19 +6,14 @@ using Terraria.ModLoader.Utilities;
 using static Terraria.ModLoader.ModContent;
 
 
-namespace FirstMod.NPCs
+namespace PeepoWorld.NPCs.PeepoBase
 {
-    public class Bob : ModNPC
+    public class PeepoBase : ModNPC
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Bob");
             Main.npcFrameCount[NPC.type] = 26;
-            NPCID.Sets.AttackFrameCount[NPC.type] = 5;
-            NPCID.Sets.DangerDetectRange[NPC.type] = 500;
-            NPCID.Sets.AttackType[NPC.type] = 1;
-            NPCID.Sets.AttackTime[NPC.type] = 45;
-            NPCID.Sets.AttackAverageChance[NPC.type] = 30;
+            NPCID.Sets.AttackType[NPC.type] = -1;
             NPCID.Sets.HatOffsetY[NPC.type] = -6;
         }
 
@@ -38,17 +33,17 @@ namespace FirstMod.NPCs
             AnimationType = NPCID.Steampunker;
         }
 
-        public override List SetNPCNameList()
+        public override List<string> SetNPCNameList()
         {
-            return new List() { "Matthias", "Richard" };
+            return new List<string>() { "Matthias", "Richard" };
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            if (NPC.CountNPCS(NPCType()) >= 1)
-            {
-                return 0;
-            }
+            //if (NPC.CountNPCS(NPCType()) >= 1)
+            //{
+            //    return 0;
+            //}
             return SpawnCondition.OverworldDay.Chance * 1.0f;
         }
 
@@ -68,7 +63,7 @@ namespace FirstMod.NPCs
             button2 = "Quote";
         }
 
-        public override void OnChatButtonClicked(bool firstButton, ref bool shop)
+        public void OnChatButtonClicked(bool firstButton, ref bool shop)
         {
             if (firstButton)
             {
@@ -80,7 +75,7 @@ namespace FirstMod.NPCs
             }
         }
 
-        public override void SetupShop(Chest shop, ref int nextSlot)
+        public void SetupShop(Chest shop, ref int nextSlot)
         {
             shop.item[nextSlot].SetDefaults(ItemID.PlatinumCoin);
             shop.item[nextSlot].shopCustomPrice = 100000;
