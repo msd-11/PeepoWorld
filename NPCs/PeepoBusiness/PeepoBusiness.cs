@@ -6,9 +6,9 @@ using Terraria.ModLoader.Utilities;
 using static Terraria.ModLoader.ModContent;
 
 
-namespace PeepoWorld.NPCs.PeepoBase
+namespace PeepoWorld.NPCs.PeepoBusiness
 {
-    public class PeepoBase : ModNPC
+    public class PeepoBusiness : ModNPC
     {
         public override void SetStaticDefaults()
         {
@@ -35,7 +35,7 @@ namespace PeepoWorld.NPCs.PeepoBase
 
         public override List<string> SetNPCNameList()
         {
-            return new List<string>() { "Matthias", "Richard" };
+            return new List<string>() { "Mike" };
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
@@ -50,9 +50,7 @@ namespace PeepoWorld.NPCs.PeepoBase
         public override string GetChat()
         {
             string[] chat = {
-                "Hello there, reader!",
-                "Have you come to purchase some wares?",
-                "I've heard rumors of an amazing blog post on www.onlineblogzone.com"
+                "Business is BOOMIN'"
             };
             return Main.rand.Next(chat);
         }

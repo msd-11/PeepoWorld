@@ -5,4 +5,36 @@ Items: {
 		DisplayName: Peepo Sword
 		Tooltip: ""
 	}
-} 
+}
+
+NPCs: {
+	PeepoBase: {
+		DisplayName: Peepo Base
+
+		TownNPCMood: {
+			Content: Je suis content.
+			NoHome: Je déteste ne pas avoir de maison.
+			FarFromHome: Je suis trop loin de chez moi.
+			LoveSpace: J'adore avoir tout cet espace.
+			DislikeCrowded: Je n'aime pas toute cette foule.
+			HateCrowded: Je déteste toute cette foule.
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	PeepoBusiness: {
+		DisplayName: Peepo Business
+
+		TownNPCMood: {
+			Content: Je suis content.
+			NoHome: Je déteste ne pas avoir de maison.
+			FarFromHome: Je suis trop loin de chez moi.
+			LoveSpace: J'adore avoir tout cet espace.
+			DislikeCrowded: Je n'aime pas toute cette foule.
+			HateCrowded: Je déteste toute cette foule.
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+}
